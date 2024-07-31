@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 const TechStack = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-semibold lg:text-6xl pb-5">TECH STACK</h1>
+        <h1 className="text-5xl font-semibold lg:text-6xl pb-5">Tech Stack</h1>
         <div className="flex flex-wrap items-center justify-center gap-4">
             <motion.div 
             whileHover={{ scale: [null, 1.2, 1.2] }}

@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <div>
         <h1 className="text-center text-5xl font-semibold lg:text-7xl p-10">Projects</h1>
-        <div className="">
+        <div className=" "  >
             {projects.map((project, index) => (
                 <motion.div 
                     key={index} 
@@ -62,7 +62,7 @@ const Projects = () => {
                         alt={project.title} 
                         height={150} 
                         width={150}
-                        className="mb-6 rounded p-2"
+                        className="mb-6 rounded p-2 hover:cursor-zoom-in"
                         />
                     </div>
                     <div className="w-full max-w-xl lg:w-3/4 p-2">

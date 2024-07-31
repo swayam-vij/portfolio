@@ -3,7 +3,8 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import TechStack from "./components/TechStack"
-
+import Footer from "./components/Footer"
+// import Contact from "./components/Contact"
 
 
 
@@ -21,6 +22,8 @@ const App = () => {
         <TechStack />
         <Projects />
         <About />
+        <Footer />
+        {/* <Contact /> */}
       </div>
     </div>
   )
