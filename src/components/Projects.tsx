@@ -1,5 +1,6 @@
 import {motion} from "framer-motion"
-
+import ecomm from "../assets/e-comm.jpg"
+import minigame from "../assets/minigamelandingpage.jpg"
 const Projects = () => {
 
     interface projects {
@@ -13,11 +14,11 @@ const Projects = () => {
     const projects = [
         {
             title : `E-commerce Website`,
-            image : ``,
+            image : ecomm,
             des : `A fully functional e-commerce website for a drug store with features like product listing, shopping cart, and user authentication.`,
             tech: ["JavaScript", "React", "TailwindCSS", "MongoDB"],
-            github : ``,
-            live : ``,
+            github : `https://github.com/swayam-vij/pharma-ecommerce`,
+            live : `https://pharma-ecommerce.vercel.app/`,
     
         },
         {
@@ -30,11 +31,11 @@ const Projects = () => {
         },
         {
             title : `Mini-Games`,
-            image : ``,
+            image : minigame,
             des : `A mini-games webiste that I built while learning Typescript. It has multiple games like Tic-Tac-Toe, Wordle and Memory Match.`,
             tech : ["TypeScript", "React", "TailwindCSS"],
-            github : ``,
-            live : ``,
+            github : `https://github.com/swayam-vij/React-Mini-Games`,
+            live : `https://react-mini-games-mu.vercel.app/`,
         },
         {
             title : `To-Do App`,
@@ -60,9 +61,7 @@ const Projects = () => {
                         <img 
                         src={project.image} 
                         alt={project.title} 
-                        height={150} 
-                        width={150}
-                        className="mb-6 rounded p-2 hover:cursor-zoom-in"
+                        className="w-full h-full mb-6 rounded p-2 hover:scale-110"
                         />
                     </div>
                     <div className="w-full max-w-xl lg:w-3/4 p-2">
@@ -75,14 +74,14 @@ const Projects = () => {
                             </span>
                         ))}
                         <div className="flex flex-row pt-4 space-x-5">
-                            <a href="">
+                            <a href={project.live} target="_blank">
                                 <motion.button
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 0.9 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 17 }} 
                                 className="rounded-md bg-fuchsia-300 text-black px-3 py-2 font-medium hover:bg-fuchsia-700">Live Demo</motion.button>
                             </a>
-                            <a href="">
+                            <a href={project.github} target="_blank">
                                 <motion.button
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 0.9 }}
