@@ -1,6 +1,7 @@
 import {motion} from "framer-motion"
 import ecomm from "../assets/e-comm.jpg"
 import minigame from "../assets/minigamelandingpage.jpg"
+import todo from "../assets/todo.jpg"
 const Projects = () => {
 
     interface projects {
@@ -39,11 +40,11 @@ const Projects = () => {
         },
         {
             title : `To-Do App`,
-            image : ``,
+            image : todo,
             des : `One of my very first projects that I recently reworked on while learning Typescript. Added features like editing and complete/incomplete tag to to-do's.`,
             tech : ["TypeScript", "React", "TailwindCSS"],
-            github : ``,
-            live : ``,
+            github : `https://github.com/swayam-vij/Todo`,
+            live : `https://todo-seven-lake.vercel.app/`,
         }
     ]
 
@@ -51,7 +52,7 @@ const Projects = () => {
   return (
     <div>
         <h1 className="text-center text-5xl font-semibold lg:text-7xl p-10">Projects</h1>
-        <div className=" "  >
+        <div className=""  >
             {projects.map((project, index) => (
                 <motion.div 
                     key={index} 
