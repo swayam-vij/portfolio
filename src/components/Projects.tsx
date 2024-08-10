@@ -51,12 +51,12 @@ const Projects = () => {
 
   return (
     <div>
-        <h1 className="text-center text-5xl font-semibold lg:text-7xl p-10">Projects</h1>
+        <h1 className="text-center text-5xl font-Jaro lg:text-7xl p-10">Projects</h1>
         <div className=""  >
             {projects.map((project, index) => (
                 <motion.div 
                     key={index} 
-                    className="mb-8 flex flex-wrap lg:justify-center"
+                    className="mb-8 flex flex-wrap lg:justify-center border-b-2"
                     >
                     <div className="w-full lg:w-1/4">
                         <img 
